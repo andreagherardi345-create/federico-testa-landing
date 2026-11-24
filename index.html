@@ -132,5 +132,76 @@
   </section>
 </main>
 <footer><div class="wrap"><strong>FEDERICO TESTA – SERVIZI E FORMAZIONI</strong><p>Un modo diverso di osservare le immagini dei quiz.</p><p>© Federico Testa – Tutti i diritti riservati.</p></div></footer>
+
+<script>
+fetch("data/testimonials.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Erreur de chargement");
+    return response.json();
+  })
+  .then(testimonials => {
+    const list = document.getElementById("testimonials-list");
+    list.innerHTML = "";
+
+    if (!Array.isArray(testimonials) || testimonials.length === 0) {
+      list.textContent = "Aucun témoignage disponible pour le moment.";
+      return;
+    }
+
+    testimonials.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "proof";
+      card.style.display = "block";
+      card.style.textAlign = "left";
+      card.style.minHeight = "auto";
+
+      const title = document.createElement("h3");
+      title.textContent = item.title || "Testimonianza";
+      title.style.margin = "0 0 10px";
+      title.style.fontSize = "1.2rem";
+      card.appendChild(title);
+
+      if (item.description) {
+        const description = document.createElement("p");
+        description.textContent = item.description;
+        card.appendChild(description);
+      }
+
+      if (item.image) {
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.title || "Foto testimonianza";
+        img.style.width = "100%";
+        img.style.maxHeight = "440px";
+        img.style.objectFit = "contain";
+        img.style.borderRadius = "10px";
+        img.style.marginTop = "12px";
+        card.appendChild(img);
+      }
+
+      if (item.audio) {
+        const audio = document.createElement("audio");
+        audio.controls = true;
+        audio.preload = "none";
+        audio.style.width = "100%";
+        audio.style.marginTop = "12px";
+
+        const source = document.createElement("source");
+        source.src = item.audio;
+        audio.appendChild(source);
+        card.appendChild(audio);
+      }
+
+      list.appendChild(card);
+    });
+  })
+  .catch(() => {
+    const list = document.getElementById("testimonials-list");
+    if (list) {
+      list.textContent = "Le testimonianze non sono momentaneamente disponibili.";
+    }
+  });
+
+</script>
 </body>
 </html>
