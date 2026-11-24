@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scopri il metodo personale di Federico Testa per osservare e analizzare gli indizi visivi nelle immagini dei quiz della patente.">
+  <meta name="theme-color" content="#111111">
+  <title>Federico Testa – Impara a osservare i quiz in modo diverso</title>
+  <style>
+    :root{--red:#d9232e;--dark:#111;--ink:#191919;--muted:#666;--light:#f5f5f5;--white:#fff;--line:#e7e7e7}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}.top{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10;border-bottom:2px solid var(--red)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:.04em;line-height:1.15}.brand small{display:block;color:#ff626b;font-size:.68rem;letter-spacing:.16em;margin-top:5px}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.9rem;color:#eee}nav a:hover{color:#ff626b}
+    .hero{background:linear-gradient(135deg,#111 0%,#1c1c1c 68%,#361216 100%);color:#fff;padding:78px 0 70px;overflow:hidden}
+    .eyebrow{color:#ff737a;text-transform:uppercase;font-weight:800;letter-spacing:.15em;font-size:.76rem}
+    h1{font-size:clamp(2.15rem,5.5vw,4.35rem);line-height:1.04;letter-spacing:-.04em;margin:16px 0}
+    h1 span,.red{color:#ff5a64}.hero h2{font-size:clamp(1.25rem,3vw,2rem);line-height:1.2;color:#ff626b;margin:0 0 18px;text-transform:uppercase}
+    .lead{font-size:1.12rem;color:#e8e8e8;max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:14px 20px;border-radius:8px;background:var(--red);color:white;text-decoration:none;font-weight:800;border:2px solid var(--red);transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.outline{background:transparent;border-color:#777}
+    .hero-art{margin-top:38px;min-height:170px;border:1px solid #555;border-radius:16px;background:radial-gradient(circle at 50% 50%,#5b2529,#242424 65%);display:grid;place-items:center;text-align:center;padding:28px}
+    .hero-art strong{font-size:clamp(1.35rem,3vw,2.2rem);max-width:650px}.hero-art p{color:#ddd;margin:8px 0 0}
+    section{padding:72px 0}.section-dark{background:#151515;color:#fff}.section-soft{background:var(--light)}
+    .kicker{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
+    h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.12;letter-spacing:-.025em;margin:10px 0 18px}
+    .intro{max-width:780px;color:var(--muted);font-size:1.08rem}.section-dark .intro{color:#ccc}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+    .tile,.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;color:var(--ink)}
+    .section-dark .tile{background:#202020;border-color:#3c3c3c;color:#fff}
+    .number{width:42px;height:42px;border-radius:10px;background:#191919;color:#ff626b;display:grid;place-items:center;font-weight:900;margin-bottom:14px}
+    .tile h3,.card h3{margin:0 0 8px;font-size:1.15rem}.tile p,.card p{margin:0;color:#666}.section-dark .tile p{color:#ccc}
+    .quote{margin-top:28px;padding:26px;border-radius:14px;background:#1b1b1b;color:#fff;border-left:5px solid var(--red);font-size:1.3rem;font-weight:900}
+    .profile{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:34px;align-items:center;margin-top:28px}
+    .media-placeholder{border:2px dashed #aaa;border-radius:14px;min-height:260px;display:grid;place-items:center;text-align:center;padding:20px;background:#eee;color:#555}
+    .media-placeholder strong{display:block;color:#222}.media-placeholder small{display:block;margin-top:7px}
+    .proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+    .proof{border:1px dashed #aaa;border-radius:14px;padding:24px;background:#fff;min-height:155px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:8px}
+    .proof .symbol{font-size:2rem}.proof p{margin:0;color:#666}
+    .audio-slot{margin-top:18px;border:1px dashed #aaa;border-radius:14px;padding:22px;background:#fff}
+    .audio-slot audio{width:100%;margin-top:12px}
+    .pricing{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px;align-items:stretch}
+    .price-card{border:1px solid #ddd;border-radius:16px;padding:28px;background:#fff;display:flex;flex-direction:column}
+    .price-card.featured{border:2px solid var(--red);box-shadow:0 12px 35px #00000012}
+    .price{font-size:2.7rem;font-weight:900;letter-spacing:-.05em;margin:6px 0}.once{font-size:.85rem;color:#777}
+    ul{padding-left:20px}li{margin:8px 0}.price-card .btn{margin-top:auto;text-align:center}
+    .payment-note{font-size:.85rem;color:#666;margin-top:18px;text-align:center}
+    footer{background:#111;color:#ccc;padding:34px 0;font-size:.9rem}footer strong{color:#fff}
+    @media(max-width:720px){.nav{align-items:flex-start;flex-direction:column;padding:14px 0}nav{gap:12px}.hero{padding:55px 0}.grid,.profile,.proof-grid,.pricing{grid-template-columns:1fr}section{padding:54px 0}.media-placeholder{min-height:220px}}
+  </style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <div class="brand">FEDERICO TESTA<small>SERVIZI E FORMAZIONI</small></div>
+    <nav aria-label="Navigazione principale">
+      <a href="#metodo">Il metodo</a><a href="#federico">Federico</a><a href="#testimonianze">Testimonianze</a><a href="#offerte">Offerte</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inizio">
+    <div class="wrap">
+      <div class="eyebrow">Un modo diverso di affrontare i quiz</div>
+      <h1>GUARDI I SEGNALI… MA HAI IMPARATO A VEDERE COSA SI NASCONDE NEI LORO <span>PIXEL?</span></h1>
+      <h2>SCOPRI GLI INDIZI VISIVI NASCOSTI NELLE IMMAGINI DEI QUIZ.</h2>
+      <p class="lead">Impara a individuare dettagli estremamente discreti nelle immagini dei quiz, sui segnali e sulla segnaletica orizzontale. Scopri come osservarli e analizzarli per valutare meglio se un'affermazione è VERA o FALSA.</p>
+      <div class="actions"><a class="btn" href="#metodo">VOGLIO SCOPRIRE IL METODO</a><a class="btn outline" href="#offerte">VEDI LE FORMULE</a></div>
+      <div class="hero-art" role="img" aria-label="Illustrazione concettuale: osservare i dettagli nascosti nelle immagini dei quiz">
+        <div><strong>NON È SOLO QUESTIONE DI GUARDARE.<br><span class="red">È IMPARARE A OSSERVARE.</span></strong><p>Un sapere personale trasmesso da Federico Testa</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" class="section-dark">
+    <div class="wrap">
+      <div class="kicker">Il metodo personale</div>
+      <h2>TUTTO PUÒ DIPENDERE DA UN DETTAGLIO CHE NON AVEVI NOTATO.</h2>
+      <p class="intro">Puoi guardare un'immagine più volte senza accorgerti di alcuni indizi. Un'osservazione più attenta può aiutarti ad analizzare un'affermazione da un'altra prospettiva.</p>
+      <div class="grid">
+        <article class="tile"><div class="number">01</div><h3>I dettagli discreti dei segnali</h3><p>Impara a osservare alcune particolarità visive che spesso passano inosservate.</p></article>
+        <article class="tile"><div class="number">02</div><h3>Gli indizi nella segnaletica orizzontale</h3><p>Presta attenzione a elementi della strada che molti candidati trascurano.</p></article>
+        <article class="tile"><div class="number">03</div><h3>Le particolarità nei pixel</h3><p>Allena uno sguardo più attento sulle immagini dei quiz.</p></article>
+        <article class="tile"><div class="number">04</div><h3>L'analisi degli indizi</h3><p>Impara a mettere in relazione le osservazioni per valutare meglio un'affermazione.</p></article>
+      </div>
+      <div class="quote">NON SI TRATTA SOLTANTO DI GUARDARE UN'IMMAGINE. SI TRATTA DI IMPARARE A OSSERVARLA IN MODO DIVERSO.</div>
+      <p class="intro" style="font-size:.88rem;margin-top:18px">Questo metodo integra lo studio delle regole ufficiali del Codice della Strada e non lo sostituisce.</p>
+    </div>
+  </section>
+
+  <section id="federico">
+    <div class="wrap">
+      <div class="kicker">Chi sono</div><h2>CHI C'È DIETRO QUESTO METODO?</h2>
+      <div class="profile">
+        <div class="media-placeholder"><div><strong>INSERISCI QUI LA FOTO DI FEDERICO</strong><small>La tua fotografia personale verrà aggiunta in questa sezione.</small></div></div>
+        <div><h3 style="font-size:1.6rem;margin:0 0 8px">FEDERICO TESTA</h3><p><strong>Ex funzionario, ingegnere ed esaminatore presso la Motorizzazione Civile.</strong></p><p>La mia esperienza nel settore degli esami teorici mi ha permesso di sviluppare un mio modo di osservare e analizzare le immagini dei quiz.</p><p>Oggi desidero condividere questo sapere con i candidati e insegnare loro a guardare le immagini con un'attenzione diversa.</p><div class="quote">IL MIO SAPERE, TRASMESSO PERSONALMENTE.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonianze" class="section-soft">
+    <div class="wrap">
+      <div class="kicker">Le esperienze degli studenti</div><h2>SCOPRI LE ESPERIENZE DI CHI HO ACCOMPAGNATO.</h2>
+      <p class="intro">Alcune testimonianze autentiche di persone che hanno condiviso la loro esperienza dopo il percorso di preparazione.</p>
+      <div class="proof-grid">
+        <div class="proof"><div class="symbol">📸</div><strong>FOTO DEGLI STUDENTI</strong><p>Qui potrai aggiungere le foto degli studenti.</p></div>
+        <div class="proof"><div class="symbol">💬</div><strong>CONVERSAZIONI WHATSAPP</strong><p>Qui potrai inserire le schermate delle conversazioni.</p></div>
+      </div>
+      <div class="audio-slot"><strong>TESTIMONIANZE AUDIO</strong><p>Ascolta le esperienze raccontate direttamente dagli studenti.</p><p style="color:#777;font-size:.9rem">I file audio verranno aggiunti qui quando saranno disponibili.</p></div>
+      <p style="font-size:.82rem;color:#666;margin-top:16px">Le testimonianze saranno pubblicate con il consenso delle persone interessate. Eventuali risultati sono esperienze individuali e non costituiscono una garanzia di superamento dell'esame.</p>
+    </div>
+  </section>
+
+  <section id="offerte">
+    <div class="wrap">
+      <div class="kicker">Scegli il tuo accesso</div><h2>IMPARA A OSSERVARE I QUIZ IN MODO DIVERSO.</h2>
+      <p class="intro">Scegli la formula più adatta al livello di approfondimento e accompagnamento che desideri.</p>
+      <div class="pricing">
+        <article class="price-card"><div class="kicker">Formula PDF</div><div class="price">29,90 €</div><div class="once">Pagamento unico</div><ul><li>PDF completo del mio metodo personale.</li><li>Imparare a individuare dettagli sui segnali.</li><li>Osservare la segnaletica orizzontale.</li><li>Analizzare gli indizi per valutare VERO o FALSO.</li><li>Bonus su alcune parole e formulazioni dei quiz.</li></ul><a class="btn whatsapp" data-offer="PDF" href="https://wa.me/393505680638?text=Salve%20Federico%2C%20vorrei%20ricevere%20informazioni%20sulla%20formula%20PDF%20da%2029%2C90%20%E2%82%AC." target="_blank" rel="noopener">SCEGLI LA FORMULA PDF</a></article>
+        <article class="price-card featured"><div class="kicker">Formula Premium</div><div class="price">120 €</div><div class="once">Pagamento unico</div><ul><li>Tutto il contenuto della formula PDF.</li><li>Da 5 a 10 video esplicativi con le mie dimostrazioni.</li><li>Accompagnamento personale e prioritario fino alla data del primo esame teorico comunicata al momento dell'acquisto.</li><li>Scambi personalizzati per comprendere e applicare il metodo.</li><li>Chiamate audio o video su appuntamento, in base alle esigenze e alla disponibilità.</li></ul><a class="btn whatsapp" data-offer="Premium" href="https://wa.me/393505680638?text=Salve%20Federico%2C%20vorrei%20ricevere%20informazioni%20sulla%20formula%20Premium%20da%20120%20%E2%82%AC." target="_blank" rel="noopener">SCEGLI LA FORMULA PREMIUM</a></article>
+      </div>
+      <p class="payment-note">Pagamento tramite bonifico bancario. IBAN comunicato in privato. Consegna dopo la conferma dell'accredito sul conto.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>FEDERICO TESTA – SERVIZI E FORMAZIONI</strong><p>Un modo diverso di osservare le immagini dei quiz.</p><p>© Federico Testa – Tutti i diritti riservati.</p></div></footer>
+</body>
+</html>
