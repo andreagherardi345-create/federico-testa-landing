@@ -1,0 +1,13 @@
+
+media:
+  - name: images
+    label: Photos et témoignages
+    input: media/images
+    output: /media/images
+    extensions: [jpg, jpeg, png, webp]
+  - name: audio
+    label: Témoignages audio
+    input: media/audio
+    output: /media/audio
+    extensions: [mp3, wav, m4a, ogg
+    ]
