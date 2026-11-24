@@ -1,13 +1,42 @@
 
+
 media:
   - name: images
     label: Photos et témoignages
     input: media/images
     output: /media/images
     extensions: [jpg, jpeg, png, webp]
+
   - name: audio
     label: Témoignages audio
     input: media/audio
     output: /media/audio
-    extensions: [mp3, wav, m4a, ogg
-    ]
+    extensions: [mp3, wav, m4a, ogg]
+
+content:
+  - name: testimonials
+    label: Témoignages
+    type: file
+    path: data/testimonials.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Titre du témoignage
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: image
+        label: Capture ou photo
+        type: image
+        options:
+          media: images
+
+      - name: audio
+        label: Témoignage audio
+        type: file
+        options:
+          media: audio
