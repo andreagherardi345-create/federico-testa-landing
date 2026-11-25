@@ -102,7 +102,72 @@
       </div>
     </div>
   </section>
+<section id="galerie-reussites" class="section-soft">
+  <div class="wrap">
+    <div class="kicker">I successi dei nostri studenti</div>
+    <h2>I VOLTI DEL SUCCESSO: I NOSTRI STUDENTI</h2>
+    <p class="intro">
+      Ogni risultato racconta impegno, determinazione e un traguardo raggiunto.
+      Ecco alcuni studenti che hanno condiviso con noi la loro soddisfazione.
+    </p>
 
+    <div class="gallery-grid">
+      <a href="./media/images/photo1.jpg" target="_blank">
+        <img src="./media/images/photo1.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+      <a href="./media/images/photo2.jpg" target="_blank">
+        <img src="./media/images/photo2.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+      <a href="./media/images/photo3.jpg" target="_blank">
+        <img src="./media/images/photo3.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+      <a href="./media/images/photo4.jpg" target="_blank">
+        <img src="./media/images/photo4.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+      <a href="./media/images/photo5.jpg" target="_blank">
+        <img src="./media/images/photo5.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+      <a href="./media/images/photo6.jpg" target="_blank">
+        <img src="./media/images/photo6.jpg" alt="Studente con il risultato dell'esame teorico">
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .gallery-grid a {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0,0,0,.10);
+  }
+
+  .gallery-grid img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform .3s ease;
+  }
+
+  .gallery-grid a:hover img {
+    transform: scale(1.04);
+  }
+
+  @media (min-width: 760px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
   <section id="testimonianze" class="section-soft">
   <div class="wrap">
     <div class="kicker">Le esperienze degli studenti</div>
